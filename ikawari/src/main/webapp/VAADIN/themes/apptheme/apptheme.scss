@@ -1,0 +1,109 @@
+// Global variable overrides. Must be declared before importing Valo.
+
+// Defines the plaintext font size, weight and family. Font size affects general component sizing.
+//$v-font-size: 16px;
+//$v-font-weight: 300;
+//$v-font-family: "Open Sans", sans-serif;
+
+// Defines the border used by all components.
+//$v-border: 1px solid (v-shade 0.7);
+//$v-border-radius: 4px;
+
+// Affects the color of some component elements, e.g Button, Panel title, etc
+//$v-background-color: hsl(210, 0%, 98%);
+// Affects the color of content areas, e.g  Panel and Window content, TextField input etc
+//$v-app-background-color: $v-background-color;
+
+// Affects the visual appearance of all components
+//$v-gradient: v-linear 8%;
+//$v-bevel-depth: 30%;
+//$v-shadow-opacity: 5%;
+
+// Defines colors for indicating status (focus, success, failure)
+//$v-focus-color: valo-focus-color(); // Calculates a suitable color automatically
+//$v-friendly-color: #2c9720;
+//$v-error-indicator-color: #ed473b;
+
+// For more information, see: https://vaadin.com/book/-/page/themes.valo.html
+// Example variants can be copy/pasted from https://vaadin.com/wiki/-/wiki/Main/Valo+Examples
+
+// The "App Shell" template colors are based off v-focus-color
+$v-focus-color: #4b4b65;
+
+// Background gradient and image used for the menu, false disables
+$app-background-gradient: unquote("linear-gradient(145deg, #484962 30%, #d06b41 100%)");
+$app-background-image: url('bg.jpg');
+
+// More information under https://github.com/appreciated/vaadin-app-layout/wiki/Styling
+
+$al-bar-height: 64px;
+$al-bar-background-color: #4285f4;
+$al-bar-font-color: valo-font-color($al-bar-background-color);
+$al-bar-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+$al-bar-z-index: 10;
+
+$al-drawer-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+$al-drawer-background-color: lighten($v-background-color, 5%);
+$al-drawer-submenu-background-color: rgba(valo-font-color($al-drawer-background-color), 0.05);
+$al-drawer-font-color: valo-font-color($al-drawer-background-color);
+$al-drawer-persistent-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+$al-drawer-width: 256px;
+$al-drawer-small-width: 64px;
+
+$al-menu-button-badge-background-color: $v-focus-color;
+$al-menu-button-badge-font-color: valo-font-color($v-focus-color, 1.0);
+$al-menu-button-badge-border-radius: 5px;
+$al-menu-disable-active-style: false;
+$al-menu-submenu-max-height: 999px;
+
+// only used by material design
+$al-menu-button-active-background-color: rgba(valo-font-color($al-drawer-background-color), 0.1); 
+$al-menu-button-active-font-color: $v-focus-color; 
+
+// new variables
+$al-menu-button-horizontal-padding: round($v-unit-size/2.4) + round($v-border-radius/3) !default;
+$al-menu-button-height: 48px !default;
+$al-menu-button-spacing: round($v-unit-size/3) !default;
+$al-menu-section-padding: round($v-unit-size) !default;
+
+@import '../valo/valo.scss';
+@import 'ordersgrid';
+@import 'ordersview';
+@import 'dashboardview';
+@import 'menu';
+
+@mixin apptheme {
+  @include valo;
+  @include ordersgrid;
+  @include ordersview;
+  @include dashboardview;
+  @include menu;
+
+  .v-errorindicator {
+    // Only show validation errors using field styles
+    display: none;
+  }
+  .Vaadin-Icons {
+    // Make Vaadin Icons behave exactly like FontAwesome
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  //https://codepen.io/sdthornton/pen/wBZdXq
+  .card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 300px;
+  margin: 1rem;
+  position: relative;
+  width: 300px;
+  }
+  .card-3 {
+  	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	}
+}
