@@ -31,11 +31,16 @@ import com.vaadin.ui.Label;
 import com.vaadin.ui.Panel;
 import com.vaadin.ui.VerticalLayout;
 
+/**
+ * 
+ * @author BEYE
+ *
+ */
 @SpringView(name = HomeView.VIEW_NAME)
 @MenuCaption("Home")
 @MenuIcon(VaadinIcons.HOME)
 public class HomeView extends Panel implements View {
-	public static final String VIEW_NAME = "Home";
+	public static final String VIEW_NAME = "Synthèse";
 
 	@Autowired NavigationManager navigator;
 	@Autowired CompteService compteService;

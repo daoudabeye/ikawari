@@ -80,6 +80,7 @@ public class Utilisateur extends AbstractEntity {
 	
 	private boolean enabled = false;
 
+	//Authentifation en 2 etapes
     private boolean isUsing2FA = true;
     
     private String secret;
@@ -310,6 +311,8 @@ public class Utilisateur extends AbstractEntity {
 		this.enabled = enabled;
 	}
 
+	//Statut de la methode d'authentification par défaut
+	//Activer ou désactiver par l'utilisateur
 	public boolean isUsing2FA() {
 		return isUsing2FA;
 	}

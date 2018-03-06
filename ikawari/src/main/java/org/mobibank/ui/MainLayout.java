@@ -22,6 +22,7 @@ import com.github.appreciated.app.layout.builder.entities.DefaultNotificationHol
 import com.github.appreciated.app.layout.builder.providers.DefaultSpringNavigationElementInfoProvider;
 import com.github.appreciated.app.layout.component.MenuHeader;
 import com.github.appreciated.app.layout.component.button.AppBarNotificationButton;
+import com.github.appreciated.app.layout.component.button.NavigationButton;
 import com.vaadin.icons.VaadinIcons;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewDisplay;
@@ -71,6 +72,7 @@ public class MainLayout extends AppLayout implements ViewDisplay {
 	}
 
 	public AppLayoutComponent build() {
+		
 		CDIAppLayoutBuilder cdi = getCDIBuilder(Behaviour.TOP) // default: LEFT_RESPONSIVE_HYBRID
 				.withViewProvider(() -> viewProvider)
 				.withNavigationElementInfoProvider(new DefaultSpringNavigationElementInfoProvider())

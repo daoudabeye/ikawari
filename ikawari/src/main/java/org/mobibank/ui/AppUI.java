@@ -23,6 +23,7 @@ import com.vaadin.ui.UI;
  * 
  * @author BEYE
  *
+ * Point d'entré de l'applacation
  */
 @SuppressWarnings("serial")
 @Theme("apptheme")
@@ -33,14 +34,17 @@ public class AppUI extends UI implements HasLogger {
 
 	private final SpringViewProvider viewProvider;
 	private final NavigationManager navigationManager;
+	//Layout principal
 	private final MainLayout mainLayout;
 	
+	//Page d'authentification par code
 	OtpAthenticationView otpView;
-	int otpValue = 0;
+	int otpValue = 0;//valeur par defaut
 
 	/**
+	 * Constructeur de la class
 	 * 
-	 * @param viewProvider
+	 * @param viewProvider @SpringViewProvider
 	 * @param navigationManager
 	 * @param mainLayout
 	 */
@@ -55,19 +59,21 @@ public class AppUI extends UI implements HasLogger {
 		this.mainLayout = mainLayout;
 	}
 
+	/**
+	 * Methode d'entrée
+	 */
 	@Override
 	protected void init(VaadinRequest vaadinRequest) {
 		viewProvider.setAccessDeniedViewClass(AccessDeniedView.class);
-		
 		UserDetailsServiceImpl userDetails = BeanLocator.find(UserDetailsServiceImpl.class);
 		
 		//2 Factor authentication setup
 		if(userDetails.getCurrent().isUsing2FA()) {
-			if(userDetails.getOtp().isAuthenticated()) {
+			if(userDetails.getOtp().isAuthenticated()) {//Utilisateur authentifié ?
 				setContent(mainLayout.build());
 			} else {
-				otpValue = userDetails.getOtp().generate();
-				otpView = new OtpAthenticationView();
+				otpValue = userDetails.getOtp().generate();//Géneration du code temporaire
+				otpView = new OtpAthenticationView();//Création de la vue
 				otpView.addOtpLitener(e -> processing(userDetails.getOtp() ,otpView));
 				setContent(otpView);
 			}

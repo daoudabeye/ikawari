@@ -1,6 +1,7 @@
 package org.mobibank.ui;
 
 import org.mobibank.HasLogger;
+import org.vaadin.inputmask.InputMask;
 
 import com.jarektoro.responsivelayout.ResponsiveLayout;
 import com.jarektoro.responsivelayout.ResponsiveRow;
@@ -25,6 +26,8 @@ import com.vaadin.ui.themes.ValoTheme;
 @SpringView
 public class OtpAthenticationView extends ResponsiveLayout implements View, HasLogger {
 
+	public static final String SEPARATOR = "-";
+	
 	private boolean authenticated = false;
 	
 	TextField code;
@@ -49,7 +52,7 @@ public class OtpAthenticationView extends ResponsiveLayout implements View, HasL
 		form.addComponent(resume);
 		
 		code = new TextField("PIN :");
-		code.setMaxLength(6);
+		InputMask.addTo(code, "999-999");
 		form.addComponent(code);
 		
 		check = new Button("Valider", VaadinIcons.CHECK);
@@ -72,6 +75,7 @@ public class OtpAthenticationView extends ResponsiveLayout implements View, HasL
 	}
 	
 	public String getInput() {
-		return code.getValue();
+		return code.getValue().replaceAll(SEPARATOR, "");
 	}
+	
 }

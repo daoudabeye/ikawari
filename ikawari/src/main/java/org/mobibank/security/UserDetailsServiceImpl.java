@@ -14,6 +14,13 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+/**
+ * 
+ * @author BEYE
+ * 
+ * Permettant de charger les informations utilisateur au moment du Login
+ * Il offre ègalement une protection contre les multiples tentatives
+ */
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
 
