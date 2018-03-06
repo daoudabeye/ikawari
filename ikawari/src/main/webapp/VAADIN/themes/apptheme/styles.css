@@ -2719,12 +2719,12 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-default-design.app-layout-behaviour-top .app-layout-menu-element-active, .apptheme .app-layout-default-design.app-layout-behaviour-top-large .app-layout-menu-element-active {
-	border-bottom: 2px solid #d3dff3;
+	border-bottom: 2px solid #f1bfbf;
 }
 
 .apptheme .app-layout-default-design.app-layout-behaviour-top .app-layout-menu-element-active .app-layout-menu-button, .apptheme .app-layout-default-design.app-layout-behaviour-top-large .app-layout-menu-element-active .app-layout-menu-button {
 	background: rgba(70, 70, 70, 0) !important;
-	color: #d3dff3 !important;
+	color: #f1bfbf !important;
 }
 
 .apptheme .app-layout-default-design .app-layout-round-image {
@@ -2799,12 +2799,12 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-material-design.app-layout-behaviour-top .app-layout-menu-element-active, .apptheme .app-layout-material-design.app-layout-behaviour-top-large .app-layout-menu-element-active {
-	border-bottom: 2px solid #d3dff3;
+	border-bottom: 2px solid #f1bfbf;
 }
 
 .apptheme .app-layout-material-design.app-layout-behaviour-top .app-layout-menu-element-active .app-layout-menu-button, .apptheme .app-layout-material-design.app-layout-behaviour-top-large .app-layout-menu-element-active .app-layout-menu-button {
 	background: rgba(70, 70, 70, 0) !important;
-	color: #d3dff3 !important;
+	color: #f1bfbf !important;
 }
 
 .apptheme .app-layout-material-design .app-layout-round-image {
@@ -3049,7 +3049,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-top-menu.v-menubar * {
-	color: #d3dff3 !important;
+	color: #f1bfbf !important;
 }
 
 .apptheme .v-csslayout.flex-row {
@@ -3188,8 +3188,8 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-left app-toolbar {
-	background-color: #4285f4;
-	color: #d3dff3;
+	background-color: #e60000;
+	color: #f1bfbf;
 	position: relative;
 	z-index: 11;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
@@ -3197,7 +3197,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-left app-toolbar .v-button {
-	color: #d3dff3 !important;
+	color: #f1bfbf !important;
 }
 
 .apptheme .app-layout-behaviour-left app-drawer {
@@ -3339,8 +3339,8 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-left-hybrid app-header app-toolbar {
-	background-color: #4285f4;
-	color: #d3dff3;
+	background-color: #e60000;
+	color: #f1bfbf;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 	position: relative;
 	z-index: 11;
@@ -3348,7 +3348,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-left-hybrid app-header app-toolbar .v-button {
-	color: #d3dff3 !important;
+	color: #f1bfbf !important;
 }
 
 .apptheme .app-layout-behaviour-left-hybrid app-header paper-icon-button {
@@ -3431,8 +3431,8 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-left-responsive-hybrid app-header app-toolbar {
-	background-color: #4285f4;
-	color: #d3dff3;
+	background-color: #e60000;
+	color: #f1bfbf;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 	position: relative;
 	z-index: 11;
@@ -3440,7 +3440,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-left-responsive-hybrid app-header app-toolbar .v-button {
-	color: #d3dff3 !important;
+	color: #f1bfbf !important;
 }
 
 .apptheme .app-layout-behaviour-left-responsive-hybrid app-header paper-icon-button {
@@ -3523,8 +3523,8 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-left-responsive-hybrid-no-app-bar app-header app-toolbar {
-	background-color: #4285f4;
-	color: #d3dff3;
+	background-color: #e60000;
+	color: #f1bfbf;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 	position: relative;
 	z-index: 11;
@@ -3532,7 +3532,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-left-responsive-hybrid-no-app-bar app-header app-toolbar .v-button {
-	color: #d3dff3 !important;
+	color: #f1bfbf !important;
 }
 
 .apptheme .app-layout-behaviour-left-responsive-hybrid-no-app-bar app-header paper-icon-button {
@@ -3611,8 +3611,8 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-left-responsive-hybrid-overlay-no-app-bar app-toolbar {
-	background-color: #4285f4;
-	color: #d3dff3;
+	background-color: #e60000;
+	color: #f1bfbf;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 	position: relative;
 	z-index: 9;
@@ -3620,7 +3620,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-left-responsive-hybrid-overlay-no-app-bar app-toolbar .v-button {
-	color: #d3dff3 !important;
+	color: #f1bfbf !important;
 }
 
 .apptheme .app-layout-behaviour-left-responsive-hybrid-overlay-no-app-bar app-toolbar paper-icon-button {
@@ -3677,14 +3677,14 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-left-overlay app-toolbar {
-	background-color: #4285f4;
-	color: #d3dff3;
+	background-color: #e60000;
+	color: #f1bfbf;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 	padding: 0px;
 }
 
 .apptheme .app-layout-behaviour-left-overlay app-toolbar .v-button {
-	color: #d3dff3 !important;
+	color: #f1bfbf !important;
 }
 
 .apptheme .app-layout-behaviour-left-overlay app-drawer[opened] {
@@ -3714,8 +3714,8 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-left-responsive app-header app-toolbar {
-	background-color: #4285f4;
-	color: #d3dff3;
+	background-color: #e60000;
+	color: #f1bfbf;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 	position: relative;
 	z-index: 11;
@@ -3723,7 +3723,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-left-responsive app-header app-toolbar .v-button {
-	color: #d3dff3 !important;
+	color: #f1bfbf !important;
 }
 
 .apptheme .app-layout-behaviour-left-responsive app-header paper-icon-button {
@@ -3795,14 +3795,14 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-left-responsive-overlay app-toolbar {
-	background-color: #4285f4;
-	color: #d3dff3;
+	background-color: #e60000;
+	color: #f1bfbf;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 	padding: 0px;
 }
 
 .apptheme .app-layout-behaviour-left-responsive-overlay app-toolbar .v-button {
-	color: #d3dff3 !important;
+	color: #f1bfbf !important;
 }
 
 .apptheme .app-layout-behaviour-left-responsive-overlay .drawer-content {
@@ -3850,14 +3850,14 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-left-responsive-overlay-no-app-bar app-toolbar {
-	background-color: #4285f4;
-	color: #d3dff3;
+	background-color: #e60000;
+	color: #f1bfbf;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 	padding: 0px;
 }
 
 .apptheme .app-layout-behaviour-left-responsive-overlay-no-app-bar app-toolbar .v-button {
-	color: #d3dff3 !important;
+	color: #f1bfbf !important;
 }
 
 .apptheme .app-layout-behaviour-left-responsive-overlay-no-app-bar .drawer-content {
@@ -3890,8 +3890,8 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-left-responsive-small app-header app-toolbar {
-	background-color: #4285f4;
-	color: #d3dff3;
+	background-color: #e60000;
+	color: #f1bfbf;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 	position: relative;
 	z-index: 11;
@@ -3899,7 +3899,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-left-responsive-small app-header app-toolbar .v-button {
-	color: #d3dff3 !important;
+	color: #f1bfbf !important;
 }
 
 .apptheme .app-layout-behaviour-left-responsive-small app-header paper-icon-button {
@@ -3986,8 +3986,8 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-left-responsive-small-no-app-bar app-header app-toolbar {
-	background-color: #4285f4;
-	color: #d3dff3;
+	background-color: #e60000;
+	color: #f1bfbf;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 	position: relative;
 	z-index: 11;
@@ -3995,7 +3995,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-left-responsive-small-no-app-bar app-header app-toolbar .v-button {
-	color: #d3dff3 !important;
+	color: #f1bfbf !important;
 }
 
 .apptheme .app-layout-behaviour-left-responsive-small-no-app-bar app-header paper-icon-button {
@@ -4078,8 +4078,8 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-top app-toolbar {
-	background-color: #4285f4;
-	color: #d3dff3;
+	background-color: #e60000;
+	color: #f1bfbf;
 	position: relative;
 	z-index: 11;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
@@ -4088,7 +4088,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-top app-toolbar .v-button {
-	color: #d3dff3 !important;
+	color: #f1bfbf !important;
 }
 
 .apptheme .app-layout-behaviour-top app-drawer {
@@ -4143,8 +4143,8 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-top-large app-toolbar {
-	background-color: #4285f4;
-	color: #d3dff3;
+	background-color: #e60000;
+	color: #f1bfbf;
 	position: relative;
 	z-index: 11;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
@@ -4153,7 +4153,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .apptheme .app-layout-behaviour-top-large app-toolbar .v-button {
-	color: #d3dff3 !important;
+	color: #f1bfbf !important;
 }
 
 .apptheme .app-layout-behaviour-top-large app-drawer {

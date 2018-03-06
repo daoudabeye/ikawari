@@ -37,7 +37,7 @@ $app-background-image: url('bg.jpg');
 // More information under https://github.com/appreciated/vaadin-app-layout/wiki/Styling
 
 $al-bar-height: 64px;
-$al-bar-background-color: #4285f4;
+$al-bar-background-color: #e60000;
 $al-bar-font-color: valo-font-color($al-bar-background-color);
 $al-bar-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 $al-bar-z-index: 10;
@@ -62,7 +62,7 @@ $al-menu-button-active-font-color: $v-focus-color;
 
 // new variables
 $al-menu-button-horizontal-padding: round($v-unit-size/2.4) + round($v-border-radius/3) !default;
-$al-menu-button-height: 48px !default;
+$al-menu-button-height: 30px !default;
 $al-menu-button-spacing: round($v-unit-size/3) !default;
 $al-menu-section-padding: round($v-unit-size) !default;
 

@@ -31,6 +31,7 @@ import com.vaadin.spring.access.SecuredViewAccessControl;
 import com.vaadin.spring.annotation.SpringViewDisplay;
 import com.vaadin.spring.annotation.UIScope;
 import com.vaadin.spring.navigator.SpringViewProvider;
+import com.vaadin.ui.Button;
 import com.vaadin.ui.Panel;
 import com.vaadin.ui.UI;
 
@@ -38,6 +39,7 @@ import com.vaadin.ui.UI;
  * 
  * @author BEYE
  *
+ * Layout principal contenant le menu et la bar horizontal
  */
 @SuppressWarnings("serial")
 @SpringViewDisplay
@@ -69,22 +71,22 @@ public class MainLayout extends AppLayout implements ViewDisplay {
 	}
 
 	public AppLayoutComponent build() {
-		CDIAppLayoutBuilder cdi = getCDIBuilder(Behaviour.LEFT_RESPONSIVE_HYBRID)
+		CDIAppLayoutBuilder cdi = getCDIBuilder(Behaviour.TOP) // default: LEFT_RESPONSIVE_HYBRID
 				.withViewProvider(() -> viewProvider)
 				.withNavigationElementInfoProvider(new DefaultSpringNavigationElementInfoProvider())
 				.withNavigator(container -> {
 					this.viewContainer = container;
 					return navigationManager;
 				})
-				.withTitle("PAYME MOBILE BANKING")
+				.withTitle("IKAWARI")
 				.addToAppBar(new AppBarNotificationButton(notifications, true))
 				.withDesign(AppBarDesign.MATERIAL)
-				.add(new MenuHeader("Version 0.1.0", new ThemeResource("logo.png")), Position.HEADER)
+				//.add(new MenuHeader("Version 0.1.0", new ThemeResource("logo.png")), Position.HEADER)
 				.add(badge, HomeView.class)
-				.addClickable("Deconnexion", VaadinIcons.EXIT, clickEvent -> {
+				.add("Config",VaadinIcons.COG, ConfigPanel.class, Position.FOOTER)
+				.addClickable("DECONNEXION", null, clickEvent -> {
 					logout();
-				}, Position.FOOTER )
-				.add("configuration", VaadinIcons.COG, ConfigPanel.class, Position.FOOTER);
+				}, Position.FOOTER );
 
 		attachNavigation(cdi, DashboardView.class);
 		attachNavigation(cdi, EnvoiView.class);
