@@ -1,3 +1,5 @@
+# This project is not longer maintained
+@See IKAWARI
 # Running the project
 
 `mvn spring-boot:run`
